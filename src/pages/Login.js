@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CredentialsContext } from "../App";
 import "./Stylesheet/login.css";
+import { Link } from "react-router-dom";
 export const handleErrors = async (response) => {
   if (!response.ok) {
     const { message } = await response.json();
@@ -61,7 +62,7 @@ export default function Login() {
           />
           <input
             id="password"
-            className="fadeIn second mb-2"
+            className="fadeIn second mb-3"
             type="password"
             onChange={(e) => setPassword(e.target.value)}
             placeholder="password"
@@ -69,6 +70,10 @@ export default function Login() {
           />
           <div className="submit-btn">
             <input type="submit" className="fadeIn fourth" value="Log In" />
+          </div>
+          <div id="create-account-wrap">
+            <div>Not a member? </div>
+            <Link to="/register">Register</Link>
           </div>
         </form>
       </div>

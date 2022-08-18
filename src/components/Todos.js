@@ -61,6 +61,15 @@ export default function Todos() {
 
   return (
     <div>
+      <form onSubmit={addTodo}>
+        <input
+          value={todoText}
+          onChange={(e) => setTodoText(e.target.value)}
+          type="text"
+        ></input>
+        <button type="submit">Add</button>
+      </form>
+      <br />
       <select value={filter} onChange={(e) => changeFilter(e.target.value)}>
         <option value="completed">Completed</option>
         <option value="uncompleted">Uncompleted</option>
@@ -77,14 +86,6 @@ export default function Todos() {
         </div>
       ))}
       <br />
-      <form onSubmit={addTodo}>
-        <input
-          value={todoText}
-          onChange={(e) => setTodoText(e.target.value)}
-          type="text"
-        ></input>
-        <button type="submit">Add</button>
-      </form>
     </div>
   );
 }

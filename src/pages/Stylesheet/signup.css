@@ -1,7 +1,7 @@
 /* BASIC */
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins";
     height: 100vh;
 }
 
@@ -74,7 +74,7 @@ h2.active {
 }
 
 .signup-form-wrapper input[type="button"], .signup-form-wrapper input[type="submit"], .signup-form-wrapper input[type="reset"] {
-    background-color: #56baed;
+    background-color: #070f13;
     border: none;
     border-bottom: 1px solid #d4d5d9;
     color: white;
@@ -97,7 +97,7 @@ h2.active {
 }
 
 .signup-form-wrapper input[type="button"]:hover, .signup-form-wrapper input[type="submit"]:hover, .signup-form-wrapper input[type="reset"]:hover {
-    background-color: #39ace7;
+    background-color: #1fd8b0;
 }
 
 .signup-form-wrapper input[type="button"]:active, .signup-form-wrapper input[type="submit"]:active, .signup-form-wrapper input[type="reset"]:active {
@@ -109,9 +109,9 @@ h2.active {
 }
 
 .signup-form-wrapper input {
-    background-color: #fbfbfb;
+    background-color: #f1eeee;
     color: #0d0d0d;
-    padding: 15px 32px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -295,4 +295,12 @@ h2.active {
 
 .submit-btn{
     padding-top: 20px;
+  }
+  #have-account-wrap {
+    background-color: #d0e0e7;
+    color: #0c0c0e;
+    font-size: 14px;
+    width: 100%;
+    padding: 0px 0px 5px 0px;
+    border-radius: 10px;
   }

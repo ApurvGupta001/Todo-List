@@ -6,7 +6,7 @@ body {
   }
   
   a {
-    color: #92badd;
+    color: #094981;
     display: inline-block;
     text-decoration: none;
     font-weight: 400;
@@ -14,7 +14,7 @@ body {
   
   h2 {
     text-align: center;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
@@ -31,13 +31,23 @@ body {
     justify-content: center;
     width: 100%;
     min-height: 100%;
-    padding: 20px;
+    padding: 0px;
   }
-  
+  .wrappper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-height: 100%;
+    padding: 0px;
+    border-style: solid;
+    border-color: black;
+  }
   #formContent {
     -webkit-border-radius: 10px;
     border-radius: 10px;
-    background: #fefefe;
+    background: #d0e0e7;
     padding: 30px;
     width: 90%;
     max-width: 450px;
@@ -73,7 +83,7 @@ body {
   .login-form-wrapper input[type="button"],
   .login-form-wrapper input[type="submit"],
   .login-form-wrapper input[type="reset"] {
-    background-color: #56baed;
+    background-color: #070f13;
     border-bottom: 1px solid #d4d5d9;
     color: white;
     padding: 15px 80px;
@@ -97,7 +107,7 @@ body {
   .login-form-wrapper input[type="button"]:hover,
   .login-form-wrapper input[type="submit"]:hover,
   .login-form-wrapper input[type="reset"]:hover {
-    background-color: #39ace7;
+    background-color: #1fd8b0;
   }
   
   .login-form-wrapper input[type="button"]:active,
@@ -111,11 +121,11 @@ body {
   }
   
   .login-form-wrapper input {
-    background-color: #fafafa;
+    background-color: #f1eeee;
     border: none;
     border-bottom: 1px solid #d4d5d9;
     color: #0d0d0d;
-    padding: 15px 32px;
+    padding: 15px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -293,3 +303,24 @@ body {
   .submit-btn{
     padding-top: 20px;
   }
+  
+  #create-account-wrap {
+    background-color: #d0e0e7;
+    color: #0c0c0e;
+    font-size: 14px;
+    width: 100%;
+    padding: 0px 0px 5px 0px;
+    border-radius: 10px;
+  }
+
+   #button {
+     line-height: 12px;
+     width: 18px;
+     font-size: 8pt;
+     font-family: tahoma;
+     margin-top: 1px;
+     margin-right: 2px;
+     position:absolute;
+     top:0;
+     right:0;
+ }
